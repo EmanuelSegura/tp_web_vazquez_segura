@@ -1,0 +1,249 @@
+/*Aplicado a toda la pagina*/
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Botones Customizados*/
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #2F563B;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+.btn.sharp {
+  border-radius:0;
+}
+
+.mainHeader .img-responsive{
+    margin: 2% auto;
+}
+
+/*Propiedades del body  */
+body{
+  background-color: #000000;
+}
+
+/*Ningun link con decoracion */
+a, a:focus{
+  text-decoration: none;
+  outline:none;
+}
+
+
+/*Color de los links visitados*/
+a:link, a:visited{
+color: #2F563B;
+}
+
+
+/*Efecto para cuando te posas en los links (Fondo verde y letras blancas) */
+a:hover, a:active{
+background-color: #2F563B;
+color: white;
+text-decoration: none;
+outline: none;
+}
+
+/*Valores customozados del navbar*/
+.navbar-default{
+  background-color: #131313;
+  background-image: linear-gradient(to bottom, #131313 0%, #131313 100%);
+  border-color: #131313;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .0), 0 1px 5px rgba(0, 0, 0, .0);
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #131313;
+}
+
+.navbar-default .navbar-nav > li > a{
+  text-align: center;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  background-color: rgba(47,86,59,0.7);
+  color: rgba(255,255,255,0.7);
+  color: white;
+}
+
+.navbar-default .navbar-nav > .active > a{
+  background-image: linear-gradient(to bottom, #2F563B 0%, #2F563B 100%);
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > 
+.active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: white;
+}
+
+.thumbnail{
+  background-color: #131313;
+  border-color: #131313;
+}
+
+/*Fondo verde para las redes sociales  */
+.social{
+  background-color: #2F563B;
+}
+
+.social ul{
+  padding: 0 2%;
+  width: 100%;
+  text-align: center;
+}
+
+/*Iconos de redes sociales y su estilo */
+.social li{
+  font-size: 230%;
+  list-style: none;
+  display: block;
+  width: 25%;
+  text-align: center;
+  display: inline;
+}
+
+/*Color de los iconos de las redes sociales  */
+.social li a{
+  color: black;
+}
+.social li a:hover{
+  color: white;
+}
+
+/*Color para los parrafos de los articulos */
+article p {
+  color:#637869;
+}
+
+
+/*Color para la lista en los articulos*/
+article ul li{
+  color:#637869;
+}
+
+
+/*Color para los titulos H2 en los articulos */
+article h2{
+  color:#2F563B;
+}
+
+
+
+/*El estilo en la tabla */
+.tablaTemporada {
+  margin-top: 2%;
+  padding:0px;
+  width:100%;
+  border:1px solid white;
+}
+
+/*Elimina el espaciado por defecto de las tablas */
+.tablaTemporada table{
+border-collapse: collapse;
+border-spacing: 0;
+width:100%;
+height:100%;
+margin:0px;padding:0px;
+}
+
+/* Estilo del encabezado de la tabla (color verde) */
+.tablaTemporada th{
+  background-color: #2F563B;
+  color: white;
+}
+
+
+/*Efecto para que en los pares e impares de la tabla cambie el color. (Mayor legibilidad) */
+.tablaTemporada tr:nth-child(odd){
+background-color:#8E9885;
+}
+
+
+.tablaTemporada tr:nth-child(even){
+background-color:#818D76;
+}
+
+/*LISTA. Nombre de personajes */
+.negrita{
+  font-weight: bold;
+}
+
+
+/*LISTA. Nombre de actores en la vida real */
+.cursiva{
+  font-style: italic;
+  font-size: 80%;
+}
+
+/* El juego de la metanfetamina. Asignamos 2 imagenes.
+ Tambien hay un cursor personalizado*/
+#methgame{
+	content:url("../images/meth1.png");
+	display: block;
+  width: 450px;
+  height: 250px;
+	border: none;
+	outline: none;
+  cursor:url("../images/cursor_martillo.gif"), auto;
+}
+
+
+/* Activa la segunda imagen al hacer click.
+Tanto de la metanfetamina rota como del martillo */
+#methgame:active{
+	content:url("../images/meth2.png");
+  cursor:url("../images/cursor_martillo2.gif"), auto;
+}
+
+
+/* ID Propiedades del dinero ganado hasta el momento en el juego de la metanfetamina */
+#dineroactual{
+  text-align:left;
+  font-size: 16px;
+}
+
+
+/*En el contacto, las cajas de texto alineadas a la izquierda */
+input{
+  text-align: left;
+}
+
+
+/*Selección del texto de contacto, con una diferencia de tamaño */
+.minitexto_contacto{
+  font-size: 80%;
+}
+
+.mainFooter{
+  width: 100%;
+ background-color: #2F563B;
+ margin-top: 2%;
+ margin-bottom: 2%;
+}
+
+.mainFooter p{
+  line-height: 25px;
+  padding: 2%;
+  width: 92%;
+  color: white;
+  text-align: center;
+}
