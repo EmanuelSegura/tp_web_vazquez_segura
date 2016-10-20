@@ -17,7 +17,7 @@ $_REQUEST[Config::$ACTION] == Config::$ACTION_DEFAULT){
     $repartoController = new WebController();
     $repartoController->mostrarReparto();
     break;
-
+ 
     case Config::$ACTION_VER_TEMPORADAS:
     $temporadasController = new WebController();
     $temporadasController->mostrarTemporadas();
